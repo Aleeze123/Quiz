@@ -2,5 +2,5 @@
  The app runs in the terminal, presents a series of questions, prompts for answers,
  and displays the results at the end of the quiz 
 
-                                                                NPX Command:
+                                                            NPX Command:
                                                           `npx aleeze-quiz`      
