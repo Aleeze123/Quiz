@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
-console.log(chalk.bold.yellow.underline.italic("\n\t\t\t WELCOME TO ALEEZE QUIZ APP"));
+console.log(chalk.bold.yellow.underline.italic("\n\t\t\t WELCOME TO ALEEZE QUIZ SYSTEM..."));
 const questions = [
     {
         question: 'Which company developed JavaScript in the 1990s?',
@@ -39,7 +39,6 @@ const questions = [
         correctAnswer: 'await'
     },
 ];
-// Asks the quiz questions to the user and evaluates their responses.
 async function askQuestions() {
     let correctAnswers = 0;
     let wrongAnswers = 0;
@@ -65,9 +64,8 @@ async function askQuestions() {
             wrongAnswers++;
         }
     }
-    // Display the user's final score
-    console.log(chalk.bold.underline.magenta(`\tFinal Score:`));
-    console.log(chalk);
-    console.log(chalk.bold.underline(`${chalk.bold.green(`Correct Answers: ${correctAnswers}`)}\n${chalk.red(`Wrong Answers: ${wrongAnswers}`)}\n${chalk.yellow(`Total Questions: ${questions.length}`)}`));
+    // user's final score
+    console.log(chalk.bold.underline.magenta(`\t\t\tFinal Score:`));
+    console.log(chalk.bold.underline(`${chalk.bold.cyan(`Correct Answers: ${correctAnswers}`)}\n${chalk.red(`Wrong Answers: ${wrongAnswers}`)}\n${chalk.green(`Total Questions: ${questions.length}`)}`));
 }
 askQuestions();

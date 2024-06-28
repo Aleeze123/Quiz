@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
-console.log(chalk.bold.yellow.underline.italic("\n\t\t\t WELCOME TO ALEEZE QUIZ APP"));
+console.log(chalk.bold.yellow.underline.italic("\n\t\t\t WELCOME TO ALEEZE QUIZ SYSTEM..."));
 
 type Questions = {
     question: string;
@@ -76,10 +76,9 @@ async function askQuestions() {
     }
 
     // user's final score
-    console.log(chalk.bold.underline.magenta(`\tFinal Score:`))
-    console.log(chalk);
+    console.log(chalk.bold.underline.magenta(`\t\t\tFinal Score:`))
     
-    console.log(chalk.bold.underline(`${chalk.bold.green(`Correct Answers: ${correctAnswers}`)}\n${chalk.red(`Wrong Answers: ${wrongAnswers}`)}\n${chalk.yellow(`Total Questions: ${questions.length}`)}`));
+    console.log(chalk.bold.underline(`${chalk.bold.cyan(`Correct Answers: ${correctAnswers}`)}\n${chalk.red(`Wrong Answers: ${wrongAnswers}`)}\n${chalk.green(`Total Questions: ${questions.length}`)}`));
     
 }
 
